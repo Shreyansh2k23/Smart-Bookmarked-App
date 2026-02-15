@@ -91,8 +91,12 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-border mt-20 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-muted-foreground">
-          <p>© 2024 BookMark. All rights reserved.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-muted-foreground animate-pulse">
+          <p>
+            Built with ❤️ by{" "}
+            <span className="font-bold text-primary">Shreyansh Gupta © 2026</span>
+          </p>
+          {/* <p>© 2026 BookMark. All rights reserved.</p> */}
         </div>
       </footer>
     </main>
