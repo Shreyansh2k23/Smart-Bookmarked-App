@@ -11,14 +11,17 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-            Your Smart Bookmark Manager
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-gradient-to-r from-blue-500 to-pink-500">
+            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+  Your Smart Bookmark Manager
+</span>
+
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance">
             Save, organize, and find your favorite links instantly. Categorize with tags, search effortlessly, and keep your digital library perfectly organized.
           </p>
           <Link href="/login">
-            <Button size="lg" className="gap-2">
+            <Button size="lg" className="gap-2 bg-gradient-to-r from-blue-500 to-green-500 text-white ">
               Get Started Free
               <Zap className="w-5 h-5" />
             </Button>
@@ -28,8 +31,8 @@ export default function Home() {
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-8 mt-20">
           <div className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-              <Bookmark className="w-6 h-6 text-primary" />
+            <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center mb-4">
+              <Bookmark className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               Save Bookmarks
@@ -40,8 +43,8 @@ export default function Home() {
           </div>
 
           <div className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-              <Tags className="w-6 h-6 text-primary" />
+            <div className="w-12 h-12 bg-red-400 rounded-xl flex items-center justify-center mb-4">
+              <Tags className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               Organize & Categorize
@@ -52,8 +55,8 @@ export default function Home() {
           </div>
 
           <div className="bg-card rounded-2xl p-8 border border-border hover:shadow-lg transition-shadow">
-            <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-              <Search className="w-6 h-6 text-primary" />
+            <div className="w-12 h-12 bg-green-400 rounded-xl flex items-center justify-center mb-4">
+              <Search className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               Search & Filter
@@ -67,7 +70,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <div className="bg-primary rounded-3xl p-12 sm:p-16 text-center">
+        <div className="bg-gradient-to-r from-purple-500 to-pink-600 rounded-3xl p-12 sm:p-16 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground mb-4">
             Ready to organize your web?
           </h2>
@@ -78,7 +81,7 @@ export default function Home() {
             <Button
               size="lg"
               variant="outline"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 hover:text-purple-600 transition-colors"
             >
               Start Free Now
             </Button>

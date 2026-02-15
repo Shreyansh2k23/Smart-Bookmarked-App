@@ -107,7 +107,7 @@ export function BookmarkForm({
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-foreground mb-1">
-              Category
+              Category *
             </label>
             <Input
               type="text"

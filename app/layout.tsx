@@ -9,7 +9,6 @@ const _geistMono = Geist_Mono({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'BookMark - Smart Bookmark Manager',
   description: 'Organize and manage your bookmarks with ease. Search, filter, and categorize your favorite links.',
-  generator: 'v0.app',
 }
 
 export default function RootLayout({

@@ -71,21 +71,21 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/20">
+    <main className="min-h-screen bg-gradient-to-br from-background via-background to-purple-200">
       <Header />
 
       <section className="max-w-md mx-auto px-4 py-20">
         <Card className="p-8">
-          <h1 className="text-2xl font-bold text-foreground text-center mb-2">
+          {/* <h1 className="text-2xl font-bold text-foreground text-center mb-2">
             {isSignUp ? 'Create Account' : 'Welcome Back'}
           </h1>
           <p className="text-center text-muted-foreground mb-8">
             {isSignUp
               ? 'Sign up to start managing your bookmarks'
               : 'Sign in to your BookMark account'}
-          </p>
+          </p> */}
 
-          <form onSubmit={handleEmailAuth} className="space-y-4 mb-6">
+          {/* <form onSubmit={handleEmailAuth} className="space-y-4 mb-6">
             <div>
               <label className="block text-sm font-medium text-foreground mb-1">
                 Email
@@ -127,9 +127,9 @@ export default function LoginPage() {
             >
               {loading ? 'Loading...' : isSignUp ? 'Sign Up' : 'Sign In'}
             </Button>
-          </form>
+          </form> */}
 
-          <div className="relative mb-6">
+          {/* <div className="relative mb-6">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-border" />
             </div>
@@ -138,12 +138,12 @@ export default function LoginPage() {
                 Or continue with
               </span>
             </div>
-          </div>
+          </div> */}
 
           <Button
             type="button"
             variant="outline"
-            className="w-full gap-2"
+            className="w-full gap-2 hover:bg-purple-100 hover:text-gray-900"
             onClick={handleGoogleLogin}
             disabled={loading}
           >
@@ -160,7 +160,7 @@ export default function LoginPage() {
             Continue with Google
           </Button>
 
-          <p className="text-center text-sm text-muted-foreground mt-6">
+          {/* <p className="text-center text-sm text-muted-foreground mt-6">
             {isSignUp ? 'Already have an account?' : "Don't have an account?"}
             <button
               type="button"
@@ -172,7 +172,7 @@ export default function LoginPage() {
             >
               {isSignUp ? 'Sign In' : 'Sign Up'}
             </button>
-          </p>
+          </p> */}
         </Card>
       </section>
     </main>

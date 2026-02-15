@@ -34,7 +34,7 @@ export function Header() {
           <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-lg">B</span>
           </div>
-          <span className="font-bold text-lg text-foreground hidden sm:inline">BookMark</span>
+          <span className="font-bold text-lg text-foreground hidden sm:inline">Smart BookMarked App</span>
         </Link>
 
         <div className="flex items-center gap-4">

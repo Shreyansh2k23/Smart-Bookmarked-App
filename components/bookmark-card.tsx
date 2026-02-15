@@ -33,7 +33,7 @@ export function BookmarkCard({ bookmark, onDelete }: BookmarkCardProps) {
             href={bookmark.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary hover:text-primary/80 transition-colors flex-shrink-0"
+            className="text-purple-500 hover:text-primary/80 transition-colors flex-shrink-0"
           >
             <ExternalLink className="w-5 h-5" />
           </a>
@@ -56,7 +56,7 @@ export function BookmarkCard({ bookmark, onDelete }: BookmarkCardProps) {
           ))}
         </div>
 
-        {bookmark.category && (
+        {bookmark.title && (
           <div className="flex items-center justify-between pt-2 border-t border-border">
               <span className="text-xs text-muted-foreground">
                 {bookmark.category || 'No category'}

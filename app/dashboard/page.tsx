@@ -153,16 +153,6 @@ export default function DashboardPage() {
           </Button>
         </div>
 
-        {/* Form */}
-        {showForm && (
-          <div className="mb-8">
-            <BookmarkForm
-              onSubmit={handleAddBookmark}
-              onCancel={() => setShowForm(false)}
-              loading={saving}
-            />
-          </div>
-        )}
 
         {/* Search and Filters */}
         <div className="bg-card rounded-xl p-6 border border-border mb-8">
@@ -253,6 +243,17 @@ export default function DashboardPage() {
             )}
           </div>
         </div>
+
+        {/* Form */}
+        {showForm && (
+          <div className="mb-8">
+            <BookmarkForm
+              onSubmit={handleAddBookmark}
+              onCancel={() => setShowForm(false)}
+              loading={saving}
+            />
+          </div>
+        )}
 
         {/* Bookmarks Grid */}
         {loading ? (
